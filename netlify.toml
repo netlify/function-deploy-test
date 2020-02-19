@@ -1,3 +1,2 @@
 [build]
-  command = "echo 'root toml file. yay!'"
   functions = "functions/"
