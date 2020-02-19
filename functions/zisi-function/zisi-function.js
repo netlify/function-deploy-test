@@ -4,7 +4,7 @@ export function handler(event, context, callback) {
 
   // Perform the API call.
   const get = () => {
-    axios.get("https://icanhazdadjoke.com/")
+    axios.get("https://icanhazdadjoke.com/", { headers: { Accept: "application/json" } })
     .then((response) =>
       {
         console.log(response.data)
