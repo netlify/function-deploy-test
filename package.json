@@ -12,7 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "netlify-lambda build lambda/bundled-function"
+    "build": "netlify-lambda build lambda/bundled-function; cd lambda/zipped-function; npm i; cd ..; zip -r ../functions/zipped-function.zip zipped-function"
   },
   "repository": {
     "type": "git",
