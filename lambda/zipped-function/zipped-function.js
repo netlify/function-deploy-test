@@ -1,6 +1,6 @@
 const axios = require("axios")
 
-export function handler(event, context, callback) {
+exports.handler = function(event, context, callback) {
   // Perform the API call.
   const get = () => {
     axios
