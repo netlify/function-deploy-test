@@ -7,11 +7,12 @@
     "test": "test"
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "netlify-lambda": "^1.6.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "netlify-lambda build lambda/bundled-function"
   },
   "repository": {
     "type": "git",
