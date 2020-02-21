@@ -7,3 +7,4 @@
 - /functions/zisi-function
     - The build script does not touch this function at all. This function is handled by the Netlify Buildbot using the built-in zip-it-and-ship-it feature.
     
+Deployed site: https://awesome-torvalds-d5c2df.netlify.com/.netlify/functions/zisi-function
