@@ -2,7 +2,15 @@ const axios = require("axios")
 const path = require("path")
 const fs = require("fs")
 
-const file = fs.readFileSync(path.resolve(process.env.LAMBDA_TASK_ROOT, "../some-other.js"));
+const fileName = "./some-other.js"
+let resolved
+if (process.env.LAMBDA_TASK_ROOT) {
+  resolved = path.resolve(process.env.LAMBDA_TASK_ROOT, fileName)
+} else {
+  resolved = path.resolve(__dirname, fileName)
+}
+
+const file = fs.readFileSync(path.resolve(resolved));
 console.log(file)
 
 exports.handler = function(event, context, callback) {
