@@ -10,8 +10,7 @@ if (process.env.LAMBDA_TASK_ROOT) {
   resolved = path.resolve(__dirname, fileName)
 }
 
-const file = fs.readFileSync(path.resolve(resolved));
-console.log(file)
+fs.readdir(process.env.LAMBDA_TASK_ROOT, (results) => console.log(results))
 
 exports.handler = function(event, context, callback) {
   // Perform the API call.
