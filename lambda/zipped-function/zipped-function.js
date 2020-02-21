@@ -2,6 +2,7 @@ const axios = require("axios")
 const path = require("path")
 const fs = require("fs")
 
+// path of the included file will be `process.env.LAMBDA_TASK_ROOT/{name_of_function}/{included_filename}`
 const fileName = "./zipped-function/some-other.js"
 const resolved = (process.env.LAMBDA_TASK_ROOT)? path.resolve(process.env.LAMBDA_TASK_ROOT, fileName):path.resolve(__dirname, fileName)
 
