@@ -10,7 +10,7 @@ if (process.env.LAMBDA_TASK_ROOT) {
   resolved = path.resolve(__dirname, fileName)
 }
 
-fs.readdir(path.resolve(process.env.LAMBDA_TASK_ROOT), (results) => console.log(results))
+fs.readdir(path.resolve(process.env.LAMBDA_TASK_ROOT), (err, results) => console.log(results))
 
 exports.handler = function(event, context, callback) {
   // Perform the API call.
