@@ -1,1 +1,1 @@
-const message = "This is another file"
+module.exports ={"message": "This is another file"}
