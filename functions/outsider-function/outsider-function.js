@@ -1,9 +1,9 @@
 const fs = require('fs')
 
 const path = './outside.js'
-let outside = require('.' + path)
-if (fs.existsSync(path)) {
-  outside = require(path)
+let outside = require(path)
+if (!fs.existsSync(path)) {
+  outside = require("."+path)
 }
 
 console.log(outside.message)
