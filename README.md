@@ -6,7 +6,14 @@
     - The build script also zips this whole folder (including the node_modules, etc.) into a zip file and copied into the functions/ folder.
 - /functions/zisi-function
     - The build script does not touch this function at all. This function is handled by the Netlify Buildbot using the built-in zip-it-and-ship-it feature.
-    
-Deployed site: awesome-torvalds-d5c2df.netlify.com
 
+## Zip-it-and-Ship-it deployed functions
+
+There is now a troubleshooting section in the repo here: https://github.com/netlify/zip-it-and-ship-it/blob/master/README.md#troubleshooting.
+And there is a details description on the bundling strategy here: https://github.com/netlify/zip-it-and-ship-it/blob/master/README.md#zipfunctionssrcfolder-destfolder-options.
+
+
+## Other
+
+Deployed site: awesome-torvalds-d5c2df.netlify.com
 https://app.netlify.com/sites/awesome-torvalds-d5c2df/functions
