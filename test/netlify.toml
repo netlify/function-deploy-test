@@ -1,9 +1,3 @@
 [build]
   command = "echo 'nested toml file. yay!'"
   
-[[redirects]]
- from = "/*"
- to = "/:splat"
- status = 200
- force = true
- conditions = {Role = ["fundboxer"]}
