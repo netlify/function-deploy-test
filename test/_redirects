@@ -1,2 +1,2 @@
-/admin/*	200!	Role=fundboxer
+/admin/*	200!	Role=admin
 /admin/*	/	401!
