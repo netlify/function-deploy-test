@@ -1,2 +1,8 @@
 [build]
   functions = "functions/"
+  
+[[redirects]]
+ from = "/*"
+ status = 200
+ conditions = {Role = ["fundboxer"]}
+ force = true
