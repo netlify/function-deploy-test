@@ -17,3 +17,5 @@ And there is a details description on the bundling strategy here: https://github
 
 Deployed site: awesome-torvalds-d5c2df.netlify.com
 https://app.netlify.com/sites/awesome-torvalds-d5c2df/functions
+
+
