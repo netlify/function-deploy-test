@@ -7,7 +7,7 @@
     "test": "test"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "netlify-lambda": "^1.6.3"
   },
   "devDependencies": {},
